@@ -1,0 +1,32 @@
+--------------
+SET NAMES utf8
+--------------
+
+Query OK, 0 rows affected (0.00 sec)
+
+--------------
+Select Name, Language, Status, Standard 
+From SuppliedName 
+Where PlaceID = 6301354 and Status<> 'official'
+Order by Language
+--------------
+
++-------------------------------------+------------+---------+--------------------------------+
+| Name                                | Language   | Status  | Standard                       |
++-------------------------------------+------------+---------+--------------------------------+
+| Aeroport Internacional de Pequin    | Catalan    | current | NULL                           |
+| 北京首都国际机场            | Chinese    | current | U.S. Board on Geographic Names |
+| Luchthaven Peking Capital           | Dutch      | current | NULL                           |
+| Beijing Shoudu Guoji Jichang        | English    | current | U.S. Board on Geographic Names |
+| Aéroport international de Pékin   | French     | current | NULL                           |
+| Flughafen Peking                    | German     | current | NULL                           |
+| Aeroporto Internazionale di Pechino | Italian    | current | NULL                           |
+| 北京首都国際空港            | Japanese   | current | NULL                           |
+| 베이징 수도 국제공항       | Korean     | current | NULL                           |
+| Aeroporto Internacional de Pequim   | Portuguese | current | NULL                           |
+| Aeropuerto Internacional de Pekin   | Spanish    | current | NULL                           |
+| San bay quoc te Thu GJo Bac Kinh    | Vietnamese | current | NULL                           |
++-------------------------------------+------------+---------+--------------------------------+
+12 rows in set (0.00 sec)
+
+Bye
